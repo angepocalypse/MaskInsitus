@@ -53,12 +53,3 @@ def overlay_images(background_path, mask_path, foreground_path, output_path):
     # Save the resulting image using PIL
     result_pil = Image.fromarray(result_rgb)
     result_pil.save(output_path)
-
-
-# Example usage
-background_path = 'img/pexels-karolina-grabowska-4207891_1080.png'
-mask_path = 'img/pexels-karolina-grabowska-4207891_1080_mask.png'
-foreground_path = 'img/tame_impala_bleed_11x14.jpg'
-output_path = 'output4.jpg'
-
-overlay_images(background_path, mask_path, foreground_path, output_path)
